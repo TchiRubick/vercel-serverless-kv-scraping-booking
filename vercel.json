@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/public",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/public/facilities/cached",
+      "dest": "/api/public/facilities/cached",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/public/facilities",
+      "dest": "/api/public/facilities",
+      "methods": ["GET"]
+    }
+  ]
+}

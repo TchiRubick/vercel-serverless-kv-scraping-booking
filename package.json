@@ -1,0 +1,16 @@
+{
+  "name": "booking-serverless",
+  "version": "1.0.0",
+  "description": "Serverless scraping API of booking.com",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "typescript": "^5.0.4",
+    "vercel": "^29.1.1"
+  },
+  "dependencies": {
+    "@vercel/kv": "^0.1.1",
+    "puppeteer": "^20.1.0"
+  }
+}
