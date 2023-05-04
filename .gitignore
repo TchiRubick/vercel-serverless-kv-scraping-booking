@@ -1,7 +1,7 @@
 .vercel
 /node_modules
 .env.*
-.yarn.*
+.yarn-*
 
 !.env.example
 !yarn.lock
