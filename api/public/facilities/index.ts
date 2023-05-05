@@ -5,7 +5,7 @@ import kv from '@vercel/kv';
 const url = 'https://www.booking.com/hotel/fr/refuges-des-hauts.fr.html';
 
 export default async (req: VercelRequest, res: VercelResponse) => {
-  const browser: Browser = await puppeteer.launch({ headless: false });
+  const browser: Browser = await puppeteer.launch({ headless: true });
 
   const page = await browser.newPage();
 
