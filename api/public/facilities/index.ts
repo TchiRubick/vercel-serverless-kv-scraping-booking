@@ -1,11 +1,20 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import puppeteer, { type Browser } from 'puppeteer';
+import edgeChromium from 'chrome-aws-lambda'
 import kv from '@vercel/kv';
+import puppeteer, { type Browser } from 'puppeteer-core'
 
 const url = 'https://www.booking.com/hotel/fr/refuges-des-hauts.fr.html';
 
+const LOCAL_CHROME_EXECUTABLE = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+
 export default async (req: VercelRequest, res: VercelResponse) => {
-  const browser: Browser = await puppeteer.launch({ headless: true });
+  const executablePath = process.env.VERCEL_ENV === 'production' ? await edgeChromium.executablePath : LOCAL_CHROME_EXECUTABLE;
+
+  const browser: Browser = await puppeteer.launch({
+    executablePath,
+    args: edgeChromium.args,
+    headless: false,
+  });
 
   const page = await browser.newPage();
 
