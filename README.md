@@ -37,3 +37,4 @@ I plan to launch the live scraping punctually.
 I will launch this product for a specific client first. Then, let's see if we can grow it at a business level.
 
 ### API Folder structure will be revisited
+
