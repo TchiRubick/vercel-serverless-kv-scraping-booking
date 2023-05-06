@@ -7,6 +7,10 @@ const url = 'https://www.booking.com/hotel/fr/refuges-des-hauts.fr.html';
 
 const LOCAL_CHROME_EXECUTABLE = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
+export const config = {
+  runtime: 'edge',
+};
+
 export default async (req: VercelRequest, res: VercelResponse) => {
   const executablePath =
     process.env.VERCEL_ENV === 'production'
