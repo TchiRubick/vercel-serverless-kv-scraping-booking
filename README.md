@@ -1,4 +1,6 @@
-# Vercel serverless - Scraping Booking.com with @vercel/kv
+# Vercel serverless - Scraping Booking.com with @vercel/kv (Paused)
+
+Currently paused due to the limitation of `serverless function` of `@vercel`
 
 ## How it works ?
 
